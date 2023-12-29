@@ -1,0 +1,298 @@
+body{
+	
+}
+
+
+/****************************************LOGIN PAGE********************************************/
+.background{
+	border: solid thin red;
+	width: 90%;
+	height: 30em;
+	background-image: url("http://localhost/online_exam_submission/public/assets/images/background.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	left: 4.5em;
+	filter: blur(10px);
+}
+
+header img{
+	width: 20em;
+	margin-left: 4.05em;
+}
+
+.login{
+	margin: 10px auto;
+	padding-bottom: 8px;
+	width: 35%;
+	border-radius: 5px;
+	box-shadow: 8px 2px 15px rgb(133,133,133);
+	position: relative;
+	top: 5em;
+	background-color: #fff;
+}
+
+.login h1{
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.login input{
+	display: block;
+	margin: 5px auto;
+	width: 90%;
+	height: 2.5em;
+	border-radius: 7px;
+	border-color: #e7680085;
+	padding-left: 10px;
+	padding-right: 10px;
+	transition : all .2s ease-in-out;
+}
+
+.login input:focus{
+    background : rgba(133, 133, 133, .3);
+    border : #e7680085;
+    border-radius : 7px;
+    transition : all .2s ease-in-out;
+}
+
+.login a{
+	width: 10em;
+	display: inline-block;
+	margin: auto 1.875em;
+	color: #0b165a;
+	text-align: center;
+	text-decoration: none;
+}
+
+/*.login a:nth-child(2){
+	margin-left: 3em;
+}*/
+
+.login a:hover{
+	color: #1a88ad
+}
+
+/*.login a:visited{
+	color: purple;
+}*/
+
+.login input[type="submit"]{
+	width: 95%;
+	height: 3em;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 5px;
+	border-color: #00000094;
+	transition : all .2s ease-in-out;
+}
+
+.login input[type="submit"]:hover{
+	cursor: pointer;
+	color: white;
+	background-color: gray;
+	width: 96%;
+	font-size: .9em;
+	transition : all .2s ease-in-out;
+}
+
+#errors{
+	outline: solid thin lavender;
+	margin: 10px auto;
+	padding-bottom: 8px;
+	width: 35%;
+	border-radius: 5px;
+	box-shadow: 8px 2px 15px rgb(133,133,133);
+	position: relative;
+	top: 5em;
+	background-color: #fff;
+}
+
+
+/*****************************************NAVIGATION BAR***********************************************/
+nav{
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2em;
+  width: 90%;
+  margin: .5em auto;
+  padding: .5em;
+  background-color: #716E66;
+}
+
+nav a, nav span{
+  padding: 0 .5em;
+  text-decoration: none;
+}
+
+nav a{
+	color: #0b165a;
+}
+
+/*nav a:visited{
+  color: blue;
+}*/
+
+nav a:hover{
+  color: #1a88ad;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+/*****************************************EXAM DEPARTMENT**********************************************/
+main{
+	outline: solid thin black;
+	width: 90%;
+	margin: 1em auto;
+}
+
+#time_and_date{
+	margin-top: 1em;
+}
+
+#daily_report{
+	margin: 1em auto;
+}
+
+#daily_report table, #MIS_2 table, #weekly_report table, #student_view table, #download_paper table{
+	border-collapse: collapse;
+}
+
+#daily_report table th, #daily_report table td, #MIS_2 table th, #MIS_2 table td, #weekly_report table th, #weekly_report table td, #student_view th, #student_view td, #download_paper th, #download_paper td{
+	padding: .4em;
+	border: solid thin grey;
+	text-align: center;
+}
+
+#MIS_1{
+	margin: 1em auto;
+}
+
+.card-header{
+	line-height:0.7em;}
+#number{
+	font-size:32px; font-weight:bold;text-align:center;margin-top:-10px;}
+#number_legand{
+	font-size:11px; text-align:center;}
+.panel-body{
+	box-shadow: 5px 5px 35px  #e0e0e0;color:#787b80;}
+.page-header{
+	margin-top:-30px;}.dropdown-toggle{font-size:12px;line-height:12px;}
+	.selectoption{
+		font-size:12px !important;}
+	.bs-searchbox > input {
+	  font-size: 12px;
+	  height:26px;
+	}
+
+#MIS_2{
+	outline: solid thin maroon;
+	margin-top: 1em;
+}
+
+#weekly_report{
+	outline: solid thin darkorange;
+	margin: 1em 0;
+}
+
+/********************************************LECTURE PAGE*********************************************/
+#lecture_upload{
+	outline: solid thin red;
+	padding: 1em 0;
+}
+
+#lecture_upload form{
+	width: 95%;
+	outline: solid thin lawngreen;
+	padding: 1em 0;
+	margin: auto;
+}
+
+#lecture_upload form input[type="file"]{
+	border: solid thin black;
+	border-radius: 5px;
+	width: 50%;
+}
+
+/***************************************************STUDENT PAGE*********************************************/
+#student_view{
+	margin-bottom: .5em;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 425px){
+	.background{
+		width: 95%;
+		height: 53em;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 26.75em 28.125em;
+		left: .6em;
+		right: .5em;
+	}
+	
+	header img{
+		width: 30%;
+		margin-left: .5em;
+	}
+	
+	.login{
+		width: 70%;
+	}
+
+	.login input{
+		width: 85%;
+	}
+
+	.login #links{
+		width: 90%;
+		margin: auto;
+	}
+
+	.login a{
+		display: inline-block;
+		text-align: center;
+		float: right;
+		margin: 0 3.2em .2em 0;
+	}
+
+	.login input[type="submit"]{
+		clear: right;
+	}
+}
+
+@media screen and (min-width: 426px) and (max-width: 640px){
+	.background{
+		width: 95%;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 43.75em 28.125em;
+		left: 1em;
+		right: 1em;
+	}
+	
+	header img{
+		width: 30%;
+		margin-left: .5em;
+	}
+	
+	.login{
+		width: 70%;
+	}
+
+	.login #links{
+		width: 70%;
+		margin: auto;
+	}
+
+	.login a{
+		display: inline;
+		margin: auto .4em;
+		text-align: center;
+	}
+}
